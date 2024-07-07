@@ -25,6 +25,7 @@ const Footer = ({
           pages.map((pageNumber, index) => {
             return (
               <span
+                key={index}
                 className={page === pageNumber ? "currentPage" : ""}
                 onClick={() => handlePageClick(pageNumber)}
               >
